@@ -18,7 +18,7 @@ const socialMediaButtonArray = [
 
 export default function MainCard() {
   return (
-    <div className="h-4/5 w-[700px] m-auto flex-col flex justify-center items-start text-start mt-24">
+    <div className="h-4/5 w-[700px] m-auto flex-col flex justify-center items-start text-start">
       <div className="text-black flex text-start text-6xl font-bold py-4 relative">
         Front-End React <br /> Developer
         <div className="mt-14 left-80 absolute flex ">
