@@ -1,6 +1,10 @@
 import React from "react";
 
-export default function About({ aboutRef }: { aboutRef: any }) {
+export default function About({
+  aboutRef,
+}: {
+  aboutRef: React.MutableRefObject<null>;
+}) {
   return (
     <div
       ref={aboutRef}
