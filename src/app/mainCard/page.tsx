@@ -16,6 +16,16 @@ const socialMediaButtonArray = [
   },
 ];
 
+const [toggleOnHover, setToggleOnHover] = useState(false);
+
+const handleMouseEnter = () => {
+  setToggleOnHover(true);
+};
+
+const handleMouseLeave = () => {
+  setToggleOnHover(false);
+};
+
 export default function MainCard() {
   return (
     <div className=" bg-[#f9f9f9] w-full py-44 items-center flex">
@@ -48,16 +58,6 @@ export default function MainCard() {
           </div>
           <span className="flex-row flex mt-6 space-x-2 w-auto">
             {socialMediaButtonArray.map((item, index) => {
-              const [toggleOnHover, setToggleOnHover] = useState(false);
-
-              const handleMouseEnter = () => {
-                setToggleOnHover(true);
-              };
-
-              const handleMouseLeave = () => {
-                setToggleOnHover(false);
-              };
-
               return (
                 <a href={item.link} key={index}>
                   <Image

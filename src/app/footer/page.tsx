@@ -15,6 +15,16 @@ const socialMediaButtonArray = [
   },
 ];
 
+const [toggleOnHover, setToggleOnHover] = useState(false);
+
+const handleMouseEnter = () => {
+  setToggleOnHover(true);
+};
+
+const handleMouseLeave = () => {
+  setToggleOnHover(false);
+};
+
 export default function Footer() {
   return (
     <div className="flex flex-row items-center  bg-[#2d2e32] -mx-40 justify-around py-12">
@@ -24,16 +34,6 @@ export default function Footer() {
       <span>
         <span className="flex-row flex space-x-2">
           {socialMediaButtonArray.map((item, index) => {
-            const [toggleOnHover, setToggleOnHover] = useState(false);
-
-            const handleMouseEnter = () => {
-              setToggleOnHover(true);
-            };
-
-            const handleMouseLeave = () => {
-              setToggleOnHover(false);
-            };
-
             return (
               <a href={item.link} key={index} target="_blank">
                 <Image

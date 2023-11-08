@@ -22,7 +22,7 @@ export default function Contact() {
       <div className="space-y-4">
         <div className="text-base text-blue-500 font-extrabold">CONTACT</div>
         <div className="text-black text-2xl font-extrabold">
-          Don't be shy! Hit me up! 👇{" "}
+          Don't be shy! Hit me up! 👇&apos;
         </div>
       </div>
       <span className="flex-row justify-start items-start flex py-14">
