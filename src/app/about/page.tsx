@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function About() {
+export default function About({ aboutRef }: { aboutRef: any }) {
   return (
-    <div className="flex flex-col bg-white justify-center text-center items-center pb-16">
+    <div
+      ref={aboutRef}
+      className="flex flex-col bg-white justify-center text-center items-center pb-16"
+    >
       <div className="w-1/3">
         <div className="text-blue-500 text-base p-4 font-extrabold">
           ABOUT ME

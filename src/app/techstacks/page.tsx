@@ -10,15 +10,15 @@ export default function TechkStatck() {
     "/Tailwind.svg",
   ];
   return (
-    <div className="bg-[#f9f9f9]  flex flex-row justify-center items-center text-black pt-36 pb-24 space-x-6">
+    <div className="bg-[#f9f9f9] flex flex-row justify-center items-center text-black pt-36 pb-24 space-x-6">
       <div className="border-r-2 pr-4 font-semibold border-gray-400">
         Tech Stack
       </div>
-      <div className="pl-8 space-x-8  flex flex-row">
+      <div className="pl-8 space-x-8 flex flex-row">
         {techImageLinks.map((string, index) => {
           return (
             <Image
-              className="cursor-pointer hover:animate-bounce"
+              className="cursor-pointer hover:-mt-6 transition ease-in-out duration-150"
               key={index}
               src={string}
               height={50}

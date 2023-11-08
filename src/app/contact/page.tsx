@@ -16,10 +16,12 @@ const contactArray = [
   },
 ];
 
-export default function Contact() {
-  const text = "Don't be shy! Hit me up! 👇";
+export default function Contact({ contactRef }: { contactRef: any }) {
   return (
-    <div className="bg-white flex justify-center flex-col text-start items-start p-6 pl-80">
+    <div
+      ref={contactRef}
+      className="bg-white flex justify-center flex-col text-start items-start p-6 pl-80"
+    >
       <div className="space-y-4">
         <div className="text-base text-blue-500 font-extrabold">CONTACT</div>
         <div className="text-black text-2xl font-extrabold">

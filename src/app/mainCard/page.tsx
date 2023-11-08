@@ -17,9 +17,9 @@ const socialMediaButtonArray = [
   },
 ];
 
-export default function MainCard() {
+export default function MainCard({ homeRef }: { homeRef: any }) {
   return (
-    <div className=" bg-[#f9f9f9] w-full py-44 items-center flex">
+    <div ref={homeRef} className=" bg-[#f9f9f9] w-full py-44 items-center flex">
       <div className="h-4/5 w-[850px] m-auto flex-col flex justify-center items-start text-start">
         <div className="h-[350px]">
           <div className="text-black flex-row flex text-start text-6xl font-bold py-4 items-center relative ">
