@@ -52,8 +52,8 @@ export default function MainCard() {
             />
           </div>
           <div className="text-base text-black flex text-start items-start">
-            Hi, I'm Nicholas Joe. A passionate Front-end React <br /> Developer
-            based in Vancouver, Canada. 📍
+            Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
+            Developer based in Vancouver, Canada. 📍
           </div>
           <span className="flex-row flex mt-6 space-x-2 w-auto">
             {socialMediaButtonArray.map((item, index) => {
