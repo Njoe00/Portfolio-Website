@@ -63,17 +63,17 @@ export default function DemoButtons({
     setToggleOnHoverDemo(false);
   };
   return (
-    <div>
+    <div className="">
       <span className="flex-row flex items-center space-x-8">
         <a
           target="_blank"
           href={links[index].git_link}
           onMouseLeave={handleMouseLeave}
           onMouseEnter={handleMouseEnter}
-          className="cursor-pointer flex-row flex items-center mt-10 space-x-1"
+          className="cursor-pointer flex-row flex items-center mt-10 space-x-1 "
         >
           <button
-            className={`font-semibold ${
+            className={`font-semibold transition ease-in-out duration-300 delay-50 ${
               toggleOnHover ? "text-blue-500" : "text-black"
             } `}
           >

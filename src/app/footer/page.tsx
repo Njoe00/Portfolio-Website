@@ -35,7 +35,7 @@ export default function Footer() {
             };
 
             return (
-              <a href={item.link} key={index}>
+              <a href={item.link} key={index} target="_blank">
                 <Image
                   className="cursor-pointer"
                   onMouseEnter={handleMouseEnter}

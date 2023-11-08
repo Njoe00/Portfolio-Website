@@ -17,7 +17,7 @@ const portfolioInfo = [
     date: "(September 2023)",
     icon: "/wallet.png",
     description:
-      "A copy version of a website that I've bought wallets from for many years.Users are able to interact with all the same features of the page as if it were the actual website.",
+      "A website that allows user to take their Youtube Music playlists and convert them to Spotify playlists.",
     stack: { react: "React", tailwind: "Tailwind" },
   },
 ];
