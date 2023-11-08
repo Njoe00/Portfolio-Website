@@ -16,17 +16,16 @@ const socialMediaButtonArray = [
   },
 ];
 
-const [toggleOnHover, setToggleOnHover] = useState(false);
-
-const handleMouseEnter = () => {
-  setToggleOnHover(true);
-};
-
-const handleMouseLeave = () => {
-  setToggleOnHover(false);
-};
-
 export default function MainCard() {
+  const [toggleOnHover, setToggleOnHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setToggleOnHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setToggleOnHover(false);
+  };
   return (
     <div className=" bg-[#f9f9f9] w-full py-44 items-center flex">
       <div className="h-4/5 w-[850px] m-auto flex-col flex justify-center items-start text-start">
