@@ -1,13 +1,11 @@
 import React from "react";
 
 export default function Header({
-  homeRef,
   scrollToHomeRef,
   scrollToAboutRef,
   scrollToProjectsRef,
   scrollToContactRef,
 }: {
-  homeRef: any;
   scrollToHomeRef: any;
   scrollToAboutRef: any;
   scrollToProjectsRef: any;

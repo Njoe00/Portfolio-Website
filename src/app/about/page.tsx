@@ -3,7 +3,7 @@ import React from "react";
 export default function About({
   aboutRef,
 }: {
-  aboutRef: React.MutableRefObject<null>;
+  aboutRef: React.MutableRefObject<undefined>;
 }) {
   return (
     <div
