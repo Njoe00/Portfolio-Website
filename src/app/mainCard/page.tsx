@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import TechStack from "../techstacks/page";
 import SocialMediaBtns from "./socialmediabtns";
@@ -18,15 +18,6 @@ const socialMediaButtonArray = [
 ];
 
 export default function MainCard() {
-  const [toggleOnHover, setToggleOnHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setToggleOnHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setToggleOnHover(false);
-  };
   return (
     <div className=" bg-[#f9f9f9] w-full py-44 items-center flex">
       <div className="h-4/5 w-[850px] m-auto flex-col flex justify-center items-start text-start">
@@ -58,7 +49,7 @@ export default function MainCard() {
           </div>{" "}
           <span className="flex-row flex mt-6 space-x-2 w-auto">
             {socialMediaButtonArray.map((item, index) => {
-              return <SocialMediaBtns item={item} index={index} />;
+              return <SocialMediaBtns item={item} key={index} />;
             })}
           </span>
         </div>

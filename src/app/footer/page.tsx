@@ -24,7 +24,7 @@ export default function Footer() {
       <span>
         <span className="flex-row flex space-x-2">
           {socialMediaButtonArray.map((item, index) => {
-            return <SocialMediaBtns item={item} index={index} />;
+            return <SocialMediaBtns item={item} key={index} />;
           })}
         </span>
       </span>

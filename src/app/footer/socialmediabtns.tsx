@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function SocialMediaBtns({
   item,
-  index,
+  key,
 }: {
   item: any;
-  index: number;
+  key: number;
 }) {
   const [toggleOnHover, setToggleOnHover] = useState(false);
 
@@ -19,8 +19,8 @@ export default function SocialMediaBtns({
     setToggleOnHover(false);
   };
   return (
-    <div>
-      <a href={item.link} key={index} target="_blank">
+    <div key={key}>
+      <a href={item.link} target="_blank">
         <Image
           className="cursor-pointer"
           onMouseEnter={handleMouseEnter}
