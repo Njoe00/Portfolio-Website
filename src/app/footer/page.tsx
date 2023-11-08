@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
+import SocialMediaBtns from "./socialmediabtns";
 
 const socialMediaButtonArray = [
   {
@@ -16,16 +16,6 @@ const socialMediaButtonArray = [
 ];
 
 export default function Footer() {
-  const [toggleOnHover, setToggleOnHover] = useState(false);
-
-  const handleMouseEnter = () => {
-    setToggleOnHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setToggleOnHover(false);
-  };
-
   return (
     <div className="flex flex-row items-center  bg-[#2d2e32] -mx-40 justify-around py-12">
       <span className="text-xl text-white font-bold">
@@ -34,20 +24,7 @@ export default function Footer() {
       <span>
         <span className="flex-row flex space-x-2">
           {socialMediaButtonArray.map((item, index) => {
-            return (
-              <a href={item.link} key={index} target="_blank">
-                <Image
-                  className="cursor-pointer"
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                  src={`${toggleOnHover ? item.highlighted : item.default}`}
-                  height={30}
-                  width={30}
-                  quality={100}
-                  alt="other"
-                />
-              </a>
-            );
+            return <SocialMediaBtns item={item} index={index} />;
           })}
         </span>
       </span>

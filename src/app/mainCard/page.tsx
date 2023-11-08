@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import TechStack from "../techstacks/page";
+import SocialMediaBtns from "./socialmediabtns";
 
 const socialMediaButtonArray = [
   {
@@ -54,23 +55,10 @@ export default function MainCard() {
           <div className="text-base text-black flex text-start items-start">
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
-          </div>
+          </div>{" "}
           <span className="flex-row flex mt-6 space-x-2 w-auto">
             {socialMediaButtonArray.map((item, index) => {
-              return (
-                <a href={item.link} key={index}>
-                  <Image
-                    className="cursor-pointer"
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    src={`${toggleOnHover ? item.highlighted : item.default}`}
-                    height={30}
-                    width={30}
-                    quality={100}
-                    alt="other"
-                  />
-                </a>
-              );
+              return <SocialMediaBtns item={item} index={index} />;
             })}
           </span>
         </div>

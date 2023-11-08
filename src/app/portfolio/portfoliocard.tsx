@@ -40,7 +40,16 @@ export default function PortfolioCard() {
         return (
           <div key={index} className="my-16 bg-white rounded-lg shadow-md p-4">
             <div className="flex h-[360px] w-[950px] justify-center flex-row items-center text-center ">
-              <div className="w-[530px] h-[340px] border-2 border-black rounded-lg shadow-md"></div>
+              <div className="w-[530px] h-[340px] border-2 rounded-lg shadow-md">
+                <Image
+                  className="rounded-lg"
+                  src="/Bellory.png"
+                  height="340"
+                  width="530"
+                  alt=""
+                  style={{ height: 340 }}
+                />
+              </div>
               <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center ml-20 mr-14">
                 <div className="flex flex-row items-center space-x-1 text-center">
                   <div className="text-black font-bold text-lg">
