@@ -63,7 +63,7 @@ export default function DemoButtons({
     setToggleOnHoverDemo(false);
   };
   return (
-    <div className="">
+    <div>
       <span className="flex-row flex items-center space-x-8">
         <a
           target="_blank"

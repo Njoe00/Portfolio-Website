@@ -8,6 +8,7 @@ const portfolioInfo = [
     title: "Bellroy",
     date: "(August 2023)",
     icon: "/wallet.png",
+    image: "/Bellory.png",
     description:
       "A copy version of a website that I've bought wallets from for many years.Users are able to interact with all the same features of the page as if it were the actual website.",
     stack: { react: "React", tailwind: "Tailwind" },
@@ -15,7 +16,8 @@ const portfolioInfo = [
   {
     title: "Soundly",
     date: "(September 2023)",
-    icon: "/wallet.png",
+    icon: "/album.png",
+    image: "/youtube_spotify.png",
     description:
       "A website that allows user to take their Youtube Music playlists and convert them to Spotify playlists.",
     stack: { react: "React", tailwind: "Tailwind" },
@@ -40,10 +42,10 @@ export default function PortfolioCard() {
         return (
           <div key={index} className="my-16 bg-white rounded-lg shadow-md p-4">
             <div className="flex h-[360px] w-[950px] justify-center flex-row items-center text-center ">
-              <div className="w-[530px] h-[340px] border-2 rounded-lg shadow-md">
+              <div className="w-[530px] h-[340px] rounded-lg shadow-md">
                 <Image
                   className="rounded-lg"
-                  src="/Bellory.png"
+                  src={item.image}
                   height="340"
                   width="530"
                   alt=""
@@ -58,7 +60,7 @@ export default function PortfolioCard() {
                   <div className="text-gray-900 font-bold text-sm">
                     {item.date}
                   </div>
-                  <Image src="/wallet.png" height="20" width="20" alt="" />
+                  <Image src={item.icon} height="20" width="20" alt="" />
                 </div>
                 <p className="text-gray-400 text-base font-semibold mt-4">
                   {item.description}
