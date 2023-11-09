@@ -3,10 +3,10 @@ import React from "react";
 interface aboutRefProps {
   aboutRef: React.RefObject<HTMLElement>;
 }
-export default function About({ aboutRef }: aboutRefProps) {
+function About({ aboutRef }: aboutRefProps) {
   return (
     <div
-      ref={aboutRef}
+      ref={aboutRef as React.RefObject<HTMLDivElement>}
       className="flex flex-col bg-white justify-center text-center items-center pb-16"
     >
       <div className="w-1/3">
@@ -27,3 +27,4 @@ export default function About({ aboutRef }: aboutRefProps) {
     </div>
   );
 }
+export default About;
