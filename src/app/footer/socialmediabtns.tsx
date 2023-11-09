@@ -2,13 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function SocialMediaBtns({
-  item,
-  key,
-}: {
-  item: any;
-  key: number;
-}) {
+export default function SocialMediaBtns({ item }: { item: any }) {
   const [toggleOnHover, setToggleOnHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -19,7 +13,7 @@ export default function SocialMediaBtns({
     setToggleOnHover(false);
   };
   return (
-    <div key={key}>
+    <div>
       <a href={item.link} target="_blank">
         <Image
           className="cursor-pointer"

@@ -1,10 +1,9 @@
 import React from "react";
 
-export default function About({
-  aboutRef,
-}: {
-  aboutRef: React.MutableRefObject<null>;
-}) {
+interface aboutRefProps {
+  aboutRef: React.RefObject<HTMLElement>;
+}
+export default function About({ aboutRef }: aboutRefProps) {
   return (
     <div
       ref={aboutRef}
