@@ -1,7 +1,7 @@
 import React from "react";
 
 interface aboutRefProps {
-  aboutRef: React.RefObject<HTMLElement>;
+  aboutRef: React.RefObject<HTMLElement | undefined>;
 }
 function About({ aboutRef }: aboutRefProps) {
   return (

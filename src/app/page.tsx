@@ -7,10 +7,10 @@ import About from "./about/page";
 import Contact from "./contact/page";
 import Footer from "./footer/page";
 export default function Home() {
-  const homeRef = useRef(null);
-  const aboutRef = useRef(null);
-  const projectsRef = useRef(null);
-  const contactRef = useRef(null);
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const projectsRef = useRef();
+  const contactRef = useRef();
 
   const scrollToSection = (ref: any) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
