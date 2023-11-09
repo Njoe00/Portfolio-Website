@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import TechStack from "../tectstacks";
-import SocialMediaButttons from "./socialmediabutttons";
+import TechStack from "./techstacks";
+import SocialMediaButttons from "./socialmediabuttons";
 
 const socialMediaButtonArray = [
   {
