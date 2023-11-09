@@ -24,7 +24,7 @@ export default function Home() {
         scrollToContactRef={() => scrollToSection(contactRef)}
       />
       <MainCard homeRef={homeRef} />
-      <About aboutRef={aboutRef} />
+      {/* <About aboutRef={aboutRef} /> */}
       <Portfolio projectsRef={projectsRef} />
       <Contact contactRef={contactRef} />
       <Footer />
