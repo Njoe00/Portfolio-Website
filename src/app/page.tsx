@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Header from "./header/page";
 import MainCard from "./mainCard/page";
 import Portfolio from "./portfolio/page";
-import About from "./about/page";
+// import About from "./about/page";
 import Contact from "./contact/page";
 import Footer from "./footer/page";
 export default function Home() {
