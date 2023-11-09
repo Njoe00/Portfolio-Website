@@ -1,11 +1,11 @@
 "use client";
 import React, { useRef } from "react";
-import Header from "./header/page";
-import MainCard from "./mainCard/page";
-import Portfolio from "./portfolio/page";
-// import About from "./about/page";
-import Contact from "./contact/page";
-import Footer from "./footer/page";
+import Header from "./components/header";
+import MainCard from "./components/maincard";
+import Portfolio from "./components/portfoliocards";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
 export default function Home() {
   const homeRef = useRef();
   const aboutRef = useRef();
@@ -24,7 +24,7 @@ export default function Home() {
         scrollToContactRef={() => scrollToSection(contactRef)}
       />
       <MainCard homeRef={homeRef} />
-      {/* <About aboutRef={aboutRef} /> */}
+      <About aboutRef={aboutRef} />
       <Portfolio projectsRef={projectsRef} />
       <Contact contactRef={contactRef} />
       <Footer />

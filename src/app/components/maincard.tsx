@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import TechStack from "../techstacks/page";
-import SocialMediaBtns from "./socialmediabtns";
+import TechStack from "../tectstacks";
+import SocialMediaButttons from "./socialmediabutttons";
 
 const socialMediaButtonArray = [
   {
@@ -49,7 +49,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
           </div>{" "}
           <span className="flex-row flex mt-6 space-x-2 w-auto">
             {socialMediaButtonArray.map((item, index) => {
-              return <SocialMediaBtns item={item} key={index} />;
+              return <SocialMediaButttons item={item} key={index} />;
             })}
           </span>
         </div>

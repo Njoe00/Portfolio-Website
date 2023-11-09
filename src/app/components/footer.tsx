@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SocialMediaBtns from "./socialmediabtns";
+import SocialMediaBtns from "../footer/socialmediabtns";
 
 const socialMediaButtonArray = [
   {
