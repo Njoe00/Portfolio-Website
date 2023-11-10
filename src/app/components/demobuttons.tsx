@@ -73,17 +73,22 @@ export default function DemoButtons({
           className="cursor-pointer flex-row flex items-center mt-10 space-x-1 "
         >
           <button
-            className={`font-semibold transition ease-in-out duration-300 delay-50 ${
+            className={`font-semibold ${
               toggleOnHover ? "text-blue-500" : "text-black"
-            } `}
+            }`}
           >
             Code
           </button>
           <Image
-            src={toggleOnHover ? "/github_blue.png" : "/github.png"}
+            src={
+              toggleOnHover
+                ? buttonInfo.code.code.highlighted_icon
+                : buttonInfo.code.code.icon
+            }
             height="24"
             width="24"
             alt=""
+            loading="eager"
           />
         </a>
         <a
@@ -103,8 +108,8 @@ export default function DemoButtons({
           <Image
             src={
               toggleOnHoverDemo
-                ? "/external-link_blue.png"
-                : "/external-link.png"
+                ? buttonInfo.live.live_demo.highlighted_icon
+                : buttonInfo.live.live_demo.icon
             }
             height="18"
             width="18"
