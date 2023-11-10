@@ -16,10 +16,10 @@ export default function SocialMediaBtns({ item }: { item: any }) {
     <div>
       <a href={item.link} target="_blank">
         <Image
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-125 hover:-translate-y-1"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          src={`${toggleOnHover ? item.highlighted : item.default}`}
+          src={item.default}
           height={30}
           width={30}
           quality={100}

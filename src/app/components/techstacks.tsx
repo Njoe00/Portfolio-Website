@@ -18,7 +18,7 @@ export default function TechkStatck() {
         {techImageLinks.map((string, index) => {
           return (
             <Image
-              className="cursor-pointer hover:-mt-6 transition ease-in-out duration-150"
+              className="cursor-pointer hover:-mt-6 hover:transition-all ease-in-out duration-1000 delay-100"
               key={index}
               src={string}
               height={50}

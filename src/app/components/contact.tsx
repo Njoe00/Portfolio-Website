@@ -24,7 +24,7 @@ export default function Contact({ contactRef }: aboutContactProps) {
   return (
     <div
       ref={contactRef as React.RefObject<HTMLDivElement>}
-      className="bg-white flex justify-center flex-col text-start items-start p-6 pl-80"
+      className="bg-white flex justify-center flex-col text-start items-start py-24 px-80"
     >
       <div className="space-y-4">
         <div className="text-base text-blue-500 font-extrabold">CONTACT</div>
