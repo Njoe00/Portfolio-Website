@@ -31,7 +31,8 @@ const links = [
   },
   {
     git_link: "https://github.com/Njoe00/Youtube-PlayList-To-Spotify-Converter",
-    website_link: "https://Youtube-PlayList-To-Spotify-Converter.vercel.app/",
+    website_link:
+      "https://youtube-play-list-to-spotify-converter-657xuiovk-njoe00.vercel.app/",
   },
 ];
 
