@@ -7,7 +7,7 @@ function About({ aboutRef }: aboutRefProps) {
   return (
     <div
       ref={aboutRef as React.RefObject<HTMLDivElement>}
-      className="flex flex-col bg-white justify-center text-center items-center pb-16"
+      className="flex flex-col bg-white justify-center text-center items-center pt-24 pb-16"
     >
       <div className="w-1/3">
         <div className="text-blue-500 text-base p-4 font-extrabold">

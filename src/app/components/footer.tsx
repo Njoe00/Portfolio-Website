@@ -17,7 +17,7 @@ const socialMediaButtonArray = [
 
 export default function Footer() {
   return (
-    <div className="flex flex-row items-center  bg-[#2d2e32] -mx-40 justify-around py-12">
+    <div className="flex flex-row items-center  bg-[#2d2e32] justify-around py-12">
       <span className="text-xl text-white font-bold">
         Copyright © 2023. All rights are reserved{" "}
       </span>

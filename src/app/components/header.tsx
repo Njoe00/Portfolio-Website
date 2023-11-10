@@ -18,7 +18,7 @@ export default function Header({
     { text: "Contact", scroll: scrollToContactRef },
   ];
   return (
-    <div className="z-10 bg-white h-20 flex items-center flex-row justify-between px-10 fixed w-full shadow-md">
+    <div className="z-10 bg-white h-20 flex items-center flex-row justify-between px-10 fixed w-screen shadow-md">
       <button
         onClick={scrollToHomeRef}
         className="text-xl text-black font-bold"

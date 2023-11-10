@@ -16,7 +16,7 @@ export default function Home() {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <main className="bg-[#f9f9f9] text-white h-screen w-screen box-border">
+    <main className="bg-[#f9f9f9] text-white h-screen w-full box-border">
       <Header
         scrollToHomeRef={() => scrollToSection(homeRef)}
         scrollToAboutRef={() => scrollToSection(aboutRef)}

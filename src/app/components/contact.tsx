@@ -16,10 +16,14 @@ const contactArray = [
   },
 ];
 
-export default function Contact({ contactRef }: { contactRef: any }) {
+interface aboutContactProps {
+  contactRef: React.RefObject<HTMLElement | undefined>;
+}
+
+export default function Contact({ contactRef }: aboutContactProps) {
   return (
     <div
-      ref={contactRef}
+      ref={contactRef as React.RefObject<HTMLDivElement>}
       className="bg-white flex justify-center flex-col text-start items-start p-6 pl-80"
     >
       <div className="space-y-4">
