@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import portfolioCardLeft from "./portfoliocardleft";
+import React from "react";
+import PortfolioCardLeft from "./portfoliocardleft";
 
 const portfolioInfo = [
   {
@@ -39,7 +39,11 @@ export default function PortfolioCard() {
   return (
     <div>
       {portfolioInfo.map((item, index) => {
-        <portfolioCardLeft item={item} index={index} links={links} />;
+        return (
+          <div>
+            <PortfolioCardLeft item={item} index={index} links={links} />;
+          </div>
+        );
       })}
     </div>
   );

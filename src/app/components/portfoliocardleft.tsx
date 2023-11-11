@@ -2,13 +2,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 import DemoButtons from "./demobuttons";
-const [scrollOnHover, setScrollOnHover] = useState(false);
 
-const handleHover = () => {
-  setScrollOnHover(!scrollOnHover);
-};
-
-export default function portfolioCardLeft({
+export default function PortfolioCardLeft({
   item,
   index,
   links,
@@ -17,6 +12,10 @@ export default function portfolioCardLeft({
   index: number;
   links: any;
 }) {
+  const [scrollOnHover, setScrollOnHover] = useState(false);
+  const handleHover = () => {
+    setScrollOnHover(!scrollOnHover);
+  };
   return (
     <div
       key={index}
