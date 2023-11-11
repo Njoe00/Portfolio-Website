@@ -6,9 +6,11 @@ import DemoButtons from "./demobuttons";
 export default function PortfolioCardLeft({
   item,
   links,
+  index,
 }: {
   item: any;
   links: any;
+  index: number;
 }) {
   const [scrollOnHover, setScrollOnHover] = useState(false);
   const handleHover = () => {
