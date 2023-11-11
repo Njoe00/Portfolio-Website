@@ -5,11 +5,9 @@ import DemoButtons from "./demobuttons";
 
 export default function PortfolioCardLeft({
   item,
-  index,
   links,
 }: {
   item: any;
-  index: number;
   links: any;
 }) {
   const [scrollOnHover, setScrollOnHover] = useState(false);
@@ -17,10 +15,7 @@ export default function PortfolioCardLeft({
     setScrollOnHover(!scrollOnHover);
   };
   return (
-    <div
-      key={index}
-      className="my-16 bg-white rounded-lg shadow-md p-4 relative"
-    >
+    <div className="my-16 bg-white rounded-lg shadow-md p-4 relative">
       <div className="flex h-[360px] w-[950px] justify-center flex-row items-center text-center relative ">
         <div
           onMouseEnter={handleHover}
