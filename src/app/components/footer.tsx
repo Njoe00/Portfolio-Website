@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SocialMediaButtons from "./socialmediabuttons";
+import SocialMediaButtonsFooter from "./socialmediabuttonsfooter";
 
 const socialMediaButtonArray = [
   {
@@ -22,7 +22,7 @@ export default function Footer() {
       <span>
         <span className="flex-row flex space-x-4">
           {socialMediaButtonArray.map((item, index) => {
-            return <SocialMediaButtons item={item} key={index} />;
+            return <SocialMediaButtonsFooter item={item} key={index} />;
           })}
         </span>
       </span>

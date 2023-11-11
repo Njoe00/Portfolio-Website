@@ -5,20 +5,17 @@ import Image from "next/image";
 export default function SocialMediaBtns({ item }: { item: any }) {
   const [toggleOnHover, setToggleOnHover] = useState(false);
 
-  const handleMouseEnter = () => {
-    setToggleOnHover(true);
+  const handleHover = () => {
+    setToggleOnHover(!toggleOnHover);
   };
 
-  const handleMouseLeave = () => {
-    setToggleOnHover(false);
-  };
   return (
     <div>
       <a href={item.link} target="_blank">
         <Image
           className="cursor-pointer hover:scale-125 hover:-translate-y-1"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          onMouseEnter={handleHover}
+          onMouseLeave={handleHover}
           src={item.default}
           height={30}
           width={30}
