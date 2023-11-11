@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import DemoButtons from "./demobuttons";
 
@@ -8,7 +8,7 @@ const portfolioInfo = [
     title: "Bellroy",
     date: "(August 2023)",
     icon: "/wallet.png",
-    image: "/Bellory.png",
+    image: "/bellroy_website.png",
     description:
       "A copy version of a website that I've bought wallets from for many years.Users are able to interact with all the same features of the page as if it were the actual website.",
     stack: { react: "React", tailwind: "Tailwind" },
@@ -17,7 +17,7 @@ const portfolioInfo = [
     title: "Soundly",
     date: "(September 2023)",
     icon: "/album.png",
-    image: "/youtube_spotify.png",
+    image: "/soundly_website.png",
     description:
       "A website that allows user to take their Youtube Music playlists and convert them to Spotify playlists.",
     stack: { react: "React", tailwind: "Tailwind" },
@@ -40,17 +40,33 @@ export default function PortfolioCard() {
   return (
     <div>
       {portfolioInfo.map((item, index) => {
+        const [scrollOnHover, setScrollOnHover] = useState(false);
+
+        const handleHover = () => {
+          setScrollOnHover(!scrollOnHover);
+        };
+
         return (
-          <div key={index} className="my-16 bg-white rounded-lg shadow-md p-4">
-            <div className="flex h-[360px] w-[950px] justify-center flex-row items-center text-center ">
-              <div className="w-[530px] h-[340px] rounded-lg shadow-md">
+          <div
+            key={index}
+            className="my-16 bg-white rounded-lg shadow-md p-4 relative"
+          >
+            <div className="flex h-[360px] w-[950px] justify-center flex-row items-center text-center relative ">
+              <div
+                onMouseEnter={handleHover}
+                onMouseLeave={handleHover}
+                className={`w-[530px] h-[340px] rounded-lg shadow-md overflow-hidden relative transition-all duration-1000 ${
+                  scrollOnHover ? "" : ""
+                }`}
+              >
                 <Image
-                  className="rounded-lg"
+                  className={`absolute h-auto transition-all duration-[4000ms] ease-in-out ${
+                    scrollOnHover ? "-translate-y-3/4" : ""
+                  }`}
                   src={item.image}
                   height="340"
                   width="530"
                   alt=""
-                  style={{ height: 340 }}
                 />
               </div>
               <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center ml-20 mr-14">
