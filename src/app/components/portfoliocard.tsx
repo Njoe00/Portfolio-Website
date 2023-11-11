@@ -41,7 +41,7 @@ export default function PortfolioCard() {
       {portfolioInfo.map((item, index) => {
         return (
           <div key={index}>
-            <PortfolioCardLeft item={item} index={index} links={links} />;
+            <PortfolioCardLeft item={item} links={links} />;
           </div>
         );
       })}
