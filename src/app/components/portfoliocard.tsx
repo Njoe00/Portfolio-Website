@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import PortfolioCardLeft from "./portfoliocardleft";
+import PortfolioCardRight from "./portfoliocardright";
 
 const portfolioInfo = [
   {
@@ -11,6 +12,7 @@ const portfolioInfo = [
     description:
       "A copy version of a website that I've bought wallets from for many years.Users are able to interact with all the same features of the page as if it were the actual website.",
     stack: { react: "React", tailwind: "Tailwind" },
+    style: true,
   },
   {
     title: "Soundly",
@@ -20,6 +22,7 @@ const portfolioInfo = [
     description:
       "A website that allows user to take their Youtube Music playlists and convert them to Spotify playlists.",
     stack: { react: "React", tailwind: "Tailwind" },
+    style: false,
   },
 ];
 
@@ -39,11 +42,15 @@ export default function PortfolioCard() {
   return (
     <div>
       {portfolioInfo.map((item, index) => {
-        return (
-          <div key={index}>
-            <PortfolioCardLeft item={item} links={links} index={index} />;
-          </div>
-        );
+        const styleCheck = () => {
+          if (item.style) {
+            return (
+              <PortfolioCardLeft item={item} links={links} index={index} />
+            );
+          }
+          return <PortfolioCardRight item={item} links={links} index={index} />;
+        };
+        return <div key={index}>{styleCheck()}</div>;
       })}
     </div>
   );
