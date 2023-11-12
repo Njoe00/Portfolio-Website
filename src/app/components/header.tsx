@@ -18,14 +18,14 @@ export default function Header({
     { text: "Contact", scroll: scrollToContactRef },
   ];
   return (
-    <div className="z-10 bg-white h-20 flex items-center flex-row justify-between px-10 fixed w-screen shadow-md">
+    <div className="z-10 bg-white h-[90px] flex items-center flex-row justify-between px-10 fixed w-screen shadow-md">
       <button
         onClick={scrollToHomeRef}
-        className="text-xl text-black font-bold"
+        className="text-2xl text-black font-extrabold"
       >
         NickJoe.dev
       </button>
-      <div className="space-x-4 font-semibold text-base">
+      <div className="space-x-4 font-semibold text-xl">
         {HeaderSection.map((string, index) => {
           return (
             <button

@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xl: "1200px",
+        lg: "992px",
+        md: "768px",
+        sm: "576px",
+      },
       fontSize: {
         maincard: [
           "3.75rem",

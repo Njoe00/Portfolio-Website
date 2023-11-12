@@ -21,8 +21,8 @@ export default function SocialMediaButtonsMainCard({
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
           src={toggleOnHover ? item.highlighted : item.default}
-          height={30}
-          width={30}
+          height={33}
+          width={33}
           quality={100}
           alt="other"
         />
