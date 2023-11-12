@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import TechStack from "./techstacks";
 import SocialMediaButtonsMainCard from "./socialmediabuttonsmaincard";
@@ -19,10 +19,13 @@ const socialMediaButtonArray = [
 
 export default function MainCard({ homeRef }: { homeRef: any }) {
   return (
-    <div ref={homeRef} className=" bg-[#f9f9f9] w-full py-44 items-center flex">
+    <div
+      ref={homeRef}
+      className=" bg-[#f9f9f9] w-full pb-28 pt-44 items-center flex border-2"
+    >
       <div className="h-4/5 w-[850px] m-auto flex-col flex justify-center items-start text-start">
         <div className="h-[350px]">
-          <div className="text-black flex-row flex text-start text-6xl font-bold py-4 items-center relative ">
+          <div className="text-[#2d2e32] flex-row flex text-start text-maincard py-4 items-center relative ">
             Front-End React <br /> Developer
             <div className="mt-14 left-80 absolute flex ">
               <Image
@@ -43,7 +46,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
               quality="85"
             />
           </div>
-          <div className="text-base text-black flex text-start items-start">
+          <div className="text-xl text-[#555555] flex text-start items-start">
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
           </div>{" "}
