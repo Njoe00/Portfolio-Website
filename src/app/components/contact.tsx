@@ -24,27 +24,27 @@ export default function Contact({ contactRef }: aboutContactProps) {
   return (
     <div
       ref={contactRef as React.RefObject<HTMLDivElement>}
-      className="bg-white flex justify-center flex-col text-start items-start py-24 px-80"
+      className="bg-white flex justify-center w-auto flex-col text-start items-start xl:py-24 lg:py-16 md:py-16 sm:py-16 xl:px-80 lg:px-12 md:px-12 sm:px-12"
     >
-      <div className="space-y-4">
+      <div className="space-y-4 lg:flex-row">
         <div className="text-base text-blue-500 font-extrabold">CONTACT</div>
         <div className="text-black text-2xl font-extrabold">
           Don&apos;t be shy! Hit me up! 👇
         </div>
       </div>
-      <span className="flex-row justify-start items-start flex py-14">
+      <span className="flex-row justify-start items-start flex py-14 w-3/4">
         {contactArray.map((item, index) => {
           return (
             <div
-              className="flex-row flex items-center text-gray-400 text-sm"
+              className="flex-row flex items-center h-3/4 w-3/4 text-gray-400 text-sm"
               key={index}
             >
-              <div className="ring-2 ring-offset-8 rounded-full ring-white drop-shadow-xl mr-4 shadow-gray-500">
+              <div className="ring-2 ring-offset-8 rounded-full w-auto h-auto ring-white drop-shadow-xl mr-4 shadow-gray-500">
                 <Image
                   className="bg-white"
                   src={item.image}
-                  width="22"
-                  height="20"
+                  width="50"
+                  height="50"
                   alt=""
                   style={{ height: 30, width: 30 }}
                 />
