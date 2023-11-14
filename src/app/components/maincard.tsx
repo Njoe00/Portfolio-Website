@@ -27,7 +27,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
       ref={homeRef}
       className=" bg-[#f9f9f9] w-full pb-28 pt-44 items-center flex"
     >
-      <div className="h-4/5 lg:w-[850px] sm:items-center m-auto flex-col flex justify-center items-start lg:text-start">
+      <div className="h-4/5 lg:w-[850px] sm:items-center m-auto flex-col flex justify-center lg:text-start xl:items-start">
         <div className="h-[350px] flex-col">
           <div className="text-[#2d2e32] lg:flex-row sm:flex-col lg:w-[850px] flex lg:text-start sm:text-center text-maincard py-4 items-center relative">
             <Image
