@@ -27,38 +27,37 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
       ref={homeRef}
       className=" bg-[#f9f9f9] w-full pb-28 pt-44 items-center flex"
     >
-      <div className="h-4/5 lg:w-[850px] sm:w-3/4 sm:text-center m-auto flex-col flex justify-center items-start lg:text-start">
-        <div className="h-[350px]">
-          <p className="text-[#2d2e32] flex-row lg:w-[850px] flex text-start text-maincard py-4 items-center relative">
-            <div className="">
-              <div>{cutWords}</div>
-              <div className="flex flex-row">
-                {lastWord}
-                <Image
-                  className="ml-4"
-                  src="/waving_hand.png"
-                  height={60}
-                  width={60}
-                  quality={100}
-                  alt="other"
-                  style={{ height: "60px", width: "60px" }}
-                />
-              </div>
-            </div>
-            <div className=""></div>
+      <div className="h-4/5 lg:w-[850px] sm:items-center m-auto flex-col flex justify-center items-start lg:text-start">
+        <div className="h-[350px] flex-col">
+          <div className="text-[#2d2e32] lg:flex-row sm:flex-col lg:w-[850px] flex lg:text-start sm:text-center text-maincard py-4 items-center relative">
             <Image
-              className="flex rounded-full items-center ml-12"
+              className="flex rounded-full items-center ml-12 sm:order-1 lg:order-2"
               src="/profile.jpg"
               height="185"
               width="185"
               alt=""
               quality="85"
             />
-          </p>
-          <div className="text-xl text-[#555555] flex text-start items-start">
+            <div className="lg:order-1 sm:order-3 sm:text-center sm:items-center">
+              {cutWords}
+              <div className="flex flex-row">
+                {lastWord}
+                <Image
+                  className="ml-4"
+                  src="/waving_hand.png"
+                  height={70}
+                  width={70}
+                  quality={100}
+                  alt="other"
+                  style={{ height: "60px", width: "60px" }}
+                />
+              </div>
+            </div>
+          </div>
+          <p className="text-xl text-[#555555] flex text-start items-start">
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
-          </div>{" "}
+          </p>{" "}
           <span className="flex-row flex mt-6 space-x-4 w-auto">
             {socialMediaButtonArray.map((item, index) => {
               return <SocialMediaButtonsMainCard item={item} key={index} />;

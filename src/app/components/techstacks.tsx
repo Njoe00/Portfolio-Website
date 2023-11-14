@@ -10,11 +10,11 @@ export default function TechkStatck() {
     "/Tailwind.svg",
   ];
   return (
-    <div className="bg-[#f9f9f9] flex flex-row justify-center items-center text-black pt-24 space-x-6">
-      <div className="border-r-2 pr-4 font-semibold text-lg border-gray-400">
+    <div className="bg-[#f9f9f9] sm:flex-col lg:flex-col flex xl:flex-row justify-center items-center text-black pt-24">
+      <div className="xl:border-r-2 xl:border-b-0 lg:border-b-2 md:border-b-2 sm:border-b-2 xl:mb-0 xl:pr-4 lg:mb-6 md:mb-6 sm:mb-6 font-semibold text-lg border-gray-400">
         Tech Stack
       </div>
-      <div className="pl-8 space-x-8 flex flex-row">
+      <div className="lg:pl-8 md:pl-0 flex flex-row space-x-6">
         {techImageLinks.map((string, index) => {
           return (
             <Image

@@ -19,7 +19,7 @@ export default function Portfolio({ projectsRef }: aboutRefProps) {
           Each project is a unique piece of development 🧩
         </div>
       </div>
-      <PortfolioCard />
+      {/* <PortfolioCard /> */}
     </div>
   );
 }
