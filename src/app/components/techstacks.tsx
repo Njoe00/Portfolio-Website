@@ -10,7 +10,7 @@ export default function TechkStatck() {
     "/Tailwind.svg",
   ];
   return (
-    <div className="bg-[#f9f9f9] sm:flex-col lg:flex-col flex xl:flex-row items-center text-black pt-24">
+    <div className="bg-[#f9f9f9] sm:flex-col lg:flex-col flex xl:flex-row items-center text-black xl:mt-32 lg:mt-44 md:mt-44 sm:mt-44">
       <div className="xl:border-r-2 xl:border-b-0 lg:border-b-2 md:border-b-2 sm:border-b-2 xl:mb-0 xl:pr-4 lg:mb-6 md:mb-6 sm:mb-6 font-semibold text-lg border-gray-400">
         Tech Stack
       </div>
