@@ -55,7 +55,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
           </p>{" "}
-          <span className="flex-row flex mt-6 space-x-4 w-auto lg:justify-center md:justify-center sm:justify-center">
+          <span className="flex-row flex mt-6 space-x-4 w-auto xl:justify-start lg:justify-center md:justify-center sm:justify-center">
             {socialMediaButtonArray.map((item, index) => {
               return <SocialMediaButtonsMainCard item={item} key={index} />;
             })}
