@@ -37,7 +37,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
             />
             <div className="lg:order-1 sm:order-3 lg:text-center lg:items-center md:text-center md:items-center sm:text-center sm:items-center">
               {cutWords}
-              <div className="flex flex-row lg:text-center lg:justify-center md:justify-center  md:items-center sm:justify-center sm:items-center">
+              <div className="flex flex-row xl:justify-start lg:text-center lg:justify-center md:justify-center  md:items-center sm:justify-center sm:items-center">
                 {lastWord}
                 <Image
                   className="ml-4"
@@ -55,7 +55,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
           </p>{" "}
-          <span className="flex-row flex mt-6 space-x-4 w-auto xl:justify-start lg:justify-center md:justify-center sm:justify-center">
+          <span className="flex-row flex mt-6 space-x-4 w-auto items-start xl:justify-start lg:justify-center md:justify-center sm:justify-center">
             {socialMediaButtonArray.map((item, index) => {
               return <SocialMediaButtonsMainCard item={item} key={index} />;
             })}

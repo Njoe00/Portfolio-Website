@@ -10,13 +10,11 @@ function About({ aboutRef }: aboutRefProps) {
       className="flex flex-col bg-white justify-center text-center items-center pt-24 pb-16"
     >
       <div className="w-1/3">
-        <div className="text-blue-500 text-base p-4 font-extrabold">
-          ABOUT ME
-        </div>
-        <div className="text-black font-bold text-2xl p-4 text-center ">
+        <div className="text-blue-500 text-xl p-4 font-extrabold">ABOUT ME</div>
+        <div className="text-black font-bold text-3xl p-4 text-center ">
           A dedicated Front-end Developer based in Vancouver, BC📍
         </div>
-        <div className="text-base text-[#767676] text-center">
+        <div className="text-xl text-[#767676] text-center">
           I am Vancouverite born and raised. My off-beat last name comes from my
           grandfather immgranting to Newzealnd where my parents both come from.
           I have strong desire to be a team player and strive leave positive
