@@ -23,23 +23,23 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
   const lastWord = words[2];
   const cutWords = words.slice(0, -1).join(" ");
   return (
-    <div ref={homeRef} className="bg-[#f9f9f9] w-full pb-28 pt-44 flex">
+    <div ref={homeRef} className="bg-[#f9f9f9] w-full h-auto pb-28 pt-44 flex">
       <div className="h-4/5 lg:w-[850px] sm:items-center m-auto flex-col flex lg:text-center xl:text-start xl:items-start">
         <div className="h-[350px] flex-col">
-          <div className="text-[#2d2e32] lg:flex-row sm:flex-col lg:w-[850px] flex text-maincard py-4 items-center relative">
+          <div className="text-[#2d2e32] xs:grid xs:grid-cols-1 sm:grid sm:grid-cols-1 md:grid  md:grid-cols-1 lg:grid-cols-1 lg:grid  xs:text-center lg:justify-items-center  md:justify-items-center  sm:justify-items-center xs:justify-items-center sm:w-[300px] lg:w-[850px] flex text-maincard py-4 items-center relative">
             <Image
-              className="flex rounded-full ml-12 sm:order-1 lg:order-2"
+              className="flex rounded-full xl:ml-12 sm:order-1 lg:order-1"
               src="/profile.jpg"
               height="185"
               width="185"
               alt=""
               quality="85"
             />
-            <div className="lg:order-1 sm:order-3 lg:text-center lg:items-center md:text-center md:items-center sm:text-center sm:items-center">
+            <div className="lg:order-3 sm:order-3 md:order-3 lg:text-center lg:items-center md:text-center md:items-center sm:text-center sm:items-center">
               {cutWords}
-              <div className="flex flex-row xl:justify-start lg:text-center lg:justify-center md:justify-center  md:items-center sm:justify-center sm:items-center">
+              <div className="flex flex-row xl:justify-start lg:text-center lg:justify-center md:justify-center  md:items-center sm:justify-center sm:items-center xs:justify-center">
                 {lastWord}
-                <Image
+                {/* <Image
                   className="ml-4"
                   src="/waving_hand.png"
                   height={70}
@@ -47,11 +47,11 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
                   quality={100}
                   alt="other"
                   style={{ height: "60px", width: "60px" }}
-                />
+                /> */}
               </div>
             </div>
           </div>
-          <p className="text-xl text-[#555555] flex xl:text-start xl:items-start lg:text-center lg:items-center md:text-center md:text-items sm:text-center sm:items-center h-auto">
+          <p className="text-xl text-[#555555] flex xl:text-start xl:items-start lg:text-center lg:justify-center md:text-center md:justify-center sm:text-center sm:justify-center xs:text-center xs:justify-center h-auto">
             Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
             Developer based in Vancouver, Canada. 📍
           </p>{" "}

@@ -13,6 +13,7 @@ const config: Config = {
         lg: "900px",
         md: "768px",
         sm: "576px",
+        xs: "375px",
       },
       fontSize: {
         maincard: [
