@@ -25,12 +25,12 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
   return (
     <div ref={homeRef} className="bg-[#f9f9f9] w-full h-auto pb-28 pt-44 flex">
       <div className="h-4/5 xs:max-lg:justify-center m-auto flex-col flex xs:max-lg:text-center xl:text-start xl:items-start">
-        <div className="flex-row flex items-center">
-          <div className="h-auto flex-col">
+        <div className="xl:flex-row xs:max-lg:flex-col flex items-center">
+          <div className="h-auto flex-col xl:order-1 xs:max-lg:order-2">
             <div className="text-[#2d2e32] xs:max-lg:items-center xs:max-lg:text-center xs:max-lg:justify-items-center flex text-maincard py-4">
               <div className="xl:justify-start xl:order-1 sm:order-3 md:order-3 lg:text-center lg:items-center md:text-center md:items-center sm:text-center sm:items-center">
                 {cutWords}
-                <div className="flex flex-row xl:justify-start lg:text-center lg:justify-center md:justify-center md:items-center sm:justify-center sm:items-center xs:justify-center">
+                <div className="flex flex-row xl:justify-start xs:max-lg:text-center xs:max-lg:justify-center">
                   {lastWord}
                   <Image
                     className="ml-4"
@@ -48,14 +48,14 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
               Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
               Developer based in Vancouver, Canada. 📍
             </p>{" "}
-            <span className="flex-row flex mt-6 space-x-4 sm:max-lg:w-auto items-start xl:justify-start sm:max-lg:justify-center">
+            <span className="flex-row flex mt-6 space-x-4 sm:max-lg:w-auto xl:items-start xl:justify-start xs:max-lg:justify-center">
               {socialMediaButtonArray.map((item, index) => {
                 return <SocialMediaButtonsMainCard item={item} key={index} />;
               })}
             </span>
           </div>
           <Image
-            className="rounded-full xl:ml-12  sm:order-1 xl:order-2"
+            className="rounded-full xl:ml-12  xs:max-lg:order-1 xl:order-2"
             src="/profile.jpg"
             height="300"
             width="300"
