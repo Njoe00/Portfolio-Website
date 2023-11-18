@@ -17,9 +17,9 @@ export default function PortfolioCardRight({
     setScrollOnHover(!scrollOnHover);
   };
   return (
-    <div className="my-16 bg-white rounded-3xl shadow-full p-4 relative">
-      {/* <div className="flex xl:h-[360px] xl:w-[950px] lg:h-[750px] lg:w-[570px] md:h-[750px] md:w-[570px] sm:h-[750px] sm:w-[570px] justify-center xl:flex-row lg:flex-col md:flex-col sm:flex-col items-center text-center">
-        <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-14 xl:ml-20 xl:order-1 lg:order-last md:order-last sm:order-last">
+    <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex">
+      <div className="flex gap-20 xl:h-[360px] xl:w-[950px] lg:h-[400px] lg:w-[900px] md:h-[750px] md:w-[570px] sm:h-[750px] sm:w-auto xs:w-auto justify-center xl:flex-row lg:flex-row flex-col items-center text-center">
+        <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-14 xl:ml-20 xl:order-1 lg:order-1 order-last">
           <div className="flex flex-row items-center space-x-1 text-center">
             <div className="text-black font-bold text-lg">{item.title}</div>
             <div className="text-gray-900 font-bold text-sm">{item.date}</div>
@@ -41,8 +41,8 @@ export default function PortfolioCardRight({
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`w-[530px] h-[340px] rounded-2xl shadow-full
-          overflow-hidden relative transition-all duration-1000 xl:order-last lg:order-1 md:order-1 sm:order-1 ${
+          className={`xs:w-[301px] h-[340px] lg:w-[530px] rounded-2xl shadow-full
+          overflow-hidden relative transition-all duration-1000 xl:order-last lg:order-last order-1 xs:flex-col sm:flex-col ${
             scrollOnHover ? "" : ""
           }`}
         >
@@ -54,9 +54,10 @@ export default function PortfolioCardRight({
             height="340"
             width="530"
             alt=""
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
