@@ -24,7 +24,7 @@ export default function Contact({ contactRef }: aboutContactProps) {
   return (
     <div
       ref={contactRef as React.RefObject<HTMLDivElement>}
-      className="bg-white flex xs:items-center xs:text-center justify-center w-auto flex-col text-start items-start xl:py-24 xl:px-80 py-16 px-12"
+      className="bg-white flex xs:items-center xs:text-center justify-center w-auto flex-col md:text-start md:items-start xl:py-24 xl:px-80 py-16 px-16"
     >
       <div className="space-y-4 flex-row sm:flex-col xs:flex-col">
         <div className="text-base text-blue-500 font-extrabold">CONTACT</div>
@@ -32,16 +32,16 @@ export default function Contact({ contactRef }: aboutContactProps) {
           Don&apos;t be shy! Hit me up! 👇
         </div>
       </div>
-      <span className="flex-row xs:flex-col sm:flex-col xs:justify-items-center xs:justify-center space-y-10 xs:items-center justify-start items-start flex py-14 w">
+      <span className="md:flex-row xs:flex-col sm:flex-col xs:justify-items-center xs:justify-center xs:items-center justify-start items-start flex py-8 md:gap-16">
         {contactArray.map((item, index) => {
           return (
             <div
-              className="flex-row sm:flex-col xs:flex-col xs:mt-8 sm:mt-8 justify-center flex items-center h-auto w-auto text-gray-400 text-sm"
+              className="flex-row md:flex-row sm:flex-col xs:flex-col xs:mt-8 sm:mt-8 justify-center flex items-center h-auto w-auto text-gray-400 text-sm"
               key={index}
             >
-              <div className="ring-2 ring-offset-8 rounded-full w-auto h-auto ring-white drop-shadow-xl mr-4 sm:mr-0 xs:mr-0  shadow-gray-500">
+              <div className="flex ring-2 ring-offset-8 rounded-full w-auto h-auto ring-white drop-shadow-xl sm:mr-0 xs:mr-0 md:mr-8 mr-8 shadow-gray-500">
                 <Image
-                  className="bg-white"
+                  className="bg-white flex"
                   src={item.image}
                   width="50"
                   height="50"
@@ -49,7 +49,7 @@ export default function Contact({ contactRef }: aboutContactProps) {
                   style={{ height: 30, width: 30 }}
                 />
               </div>
-              <div className="flex flex-col xs:items-center sm:items-center text-start text-base items-start pr-12 ml-2 sm:p-0 xs:p-0 sm:m-0 xs:m-0 sm:mt-4 xs:mt-4">
+              <div className="flex flex-col xs:items-center sm:items-center md:text-start md:items-start text-start text-base items-start pr-12 ml-2 xs:mt-6 sm:mt-6 sm:p-0 xs:p-0 sm:m-0 xs:m-0">
                 <div className="text-base text-black font-black mb-2">
                   {item.title}
                 </div>

@@ -17,8 +17,8 @@ export default function PortfolioCardRight({
     setScrollOnHover(!scrollOnHover);
   };
   return (
-    <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex">
-      <div className="flex gap-20 xl:h-[360px] xl:w-[950px] lg:h-[400px] lg:w-[900px] md:h-[750px] md:w-[570px] sm:h-[750px] sm:w-auto xs:w-auto justify-center xl:flex-row lg:flex-row flex-col items-center text-center">
+    <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex p-4">
+      <div className="flex xl:w-[950px] lg:h-[400px] lg:w-[950px] lg:gap-20 md:gap-12 md:w-[570px] sm:w-auto xs:w-auto xs:h-[750px] justify-center xl:flex-row lg:flex-row flex-col items-center text-center relative">
         <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-14 xl:ml-20 xl:order-1 lg:order-1 order-last">
           <div className="flex flex-row items-center space-x-1 text-center">
             <div className="text-black font-bold text-lg">{item.title}</div>
@@ -28,7 +28,7 @@ export default function PortfolioCardRight({
           <p className="text-gray-400 text-base font-semibold mt-4">
             {item.description}
           </p>
-          <span className="flex flex-row mt-6 items-center text-center space-x-8">
+          <span className="flex flex-row items-center text-center space-x-8">
             <div className="text-black font-semibold text-lg ring-2 shadow-full_sm ring-offset-[5px] ring-white">
               {item.stack.react}
             </div>
