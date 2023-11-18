@@ -18,26 +18,27 @@ export default function PortfolioCardLeft({
   };
   return (
     <div className="my-16 bg-white rounded-3xl shadow-full p-4 relative">
-      <div className="flex xl:h-[360px] xl:w-[950px] lg:h-[750px] lg:w-[570px] md:h-[750px] md:w-[570px] sm:h-[750px] sm:w-[570px] xs:w-[360px] xs:h-[600px] justify-center xl:flex-row lg:flex-col md:flex-col sm:flex-col items-center text-center relative">
-        <div
+      <div className="flex w-[750px] xl:w-[950px] lg:h-[750px] lg:w-[570px] md:w-[570px] sm:w-[570px] xs:w-auto xs:h-[750px] justify-center xl:flex-row flex-col items-center text-center relative">
+        {/* <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`w-[530px] h-[340px] rounded-2xl shadow-full
+          className={`w-[301px] h-[340px] rounded-2xl shadow- flex
           overflow-hidden relative transition-all duration-1000 lg:order-3 md:order-1 sm:order-1 ${
             scrollOnHover ? "" : ""
           }`}
         >
           <Image
-            className={`absolute h-auto transition-all duration-[4000ms] ease-in-out ${
+            className={`absolute h-auto transition-all flex duration-[4000ms] ease-in-out ${
               scrollOnHover ? "-translate-y-3/4" : ""
             }`}
             src={item.image}
             height="340"
-            width="530"
+            width="341"
             alt=""
+            style={{ width: "341px" }}
           />
-        </div>
-        <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-20 xl:ml-14 lg:order-last md:order-last sm:order-last">
+        </div> */}
+        {/* <div className="flex-col flex flex-end w-[301px] h-[329px] text-center justify-center items-center xl:mr-20 xl:ml-14 xl:order-1 order-last">
           <div className="flex flex-row items-center space-x-1 text-center">
             <div className="text-black font-bold text-lg">{item.title}</div>
             <div className="text-gray-900 font-bold text-sm">{item.date}</div>
@@ -55,7 +56,7 @@ export default function PortfolioCardLeft({
             </div>
           </span>
           <DemoButtons links={links} index={index} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
