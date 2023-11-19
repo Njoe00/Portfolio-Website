@@ -83,7 +83,7 @@ export default function Header({
             </div>
             {toggleHeader && (
               <div className="bg-white text-black h-[800px] justify-center justify-items-center flex w-full flex-col absolute z-20 mt-56 shadow-md">
-                <div className="flex-row justify-end flex mr-6 ">
+                <div className="flex-row justify-end flex mr-6">
                   <button onClick={handleToggleHeader}>
                     <Image
                       className="flex"
@@ -94,7 +94,7 @@ export default function Header({
                     />
                   </button>
                 </div>
-                <div className="justify-center items-center text-center flex flex-col space-y-6 mt-4">
+                <div className="justify-center items-center text-center flex flex-col space-y-6 mt-12">
                   {HeaderSection.map((string, index) => {
                     return (
                       <button
