@@ -27,11 +27,11 @@ export default function Header({
 
   useEffect(() => {
     const handleResize = () => {
-      setisXLlargeScreen(window.innerWidth > 900);
+      setisXLlargeScreen(
+        typeof window !== "undefined" ? window.innerWidth > 900 : false
+      );
       if (!isXLlargeScreen) {
-        setToggleHeader(
-          typeof window !== "undefined" ? window.innerWidth > 900 : false
-        );
+        setToggleHeader(false);
       }
     };
 
@@ -43,6 +43,7 @@ export default function Header({
       window.removeEventListener("resize", handleResize);
     };
   }, [isXLlargeScreen]);
+
   const HeaderSection = [
     { text: "Home", scroll: scrollToHomeRef },
     { text: "About", scroll: scrollToAboutRef },
@@ -50,7 +51,6 @@ export default function Header({
     { text: "Contact", scroll: scrollToContactRef },
   ];
 
-  const isXLargeScreen = window.innerWidth > 900;
   return (
     <div className="absolute">
       <div className="z-10 bg-white h-[90px] flex items-center flex-row xl:px-10 lg:px-10 justify-between fixed w-screen shadow-md">
