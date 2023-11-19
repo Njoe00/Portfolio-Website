@@ -18,7 +18,7 @@ export default function PortfolioCardRight({
   };
   return (
     <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex p-4">
-      <div className="flex xl:w-[950px] lg:w-[450px] md:w-[570px] sm:w-auto xs:w-auto lg:h-[750px] sm:h-[750px] xs:h-[750px] justify-center xl:flex-row lg:flex-col flex-col items-center text-center relative">
+      <div className="flex xl:w-[950px] xl:h-[400px] lg:w-[450px] md:w-[570px] sm:w-auto xs:w-auto lg:h-[750px] sm:h-[750px] xs:h-[750px] justify-center xl:flex-row lg:flex-col flex-col items-center text-center relative">
         <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-14 xl:ml-20 xl:order-1 lg:order-last order-last">
           <div className="flex flex-row items-center space-x-1 text-center">
             <div className="text-black font-bold text-lg">{item.title}</div>
@@ -28,7 +28,7 @@ export default function PortfolioCardRight({
           <p className="text-gray-400 text-base font-semibold mt-4">
             {item.description}
           </p>
-          <span className="flex flex-row items-center text-center space-x-8">
+          <span className="flex flex-row items-center text-center space-x-8 mt-6">
             <div className="text-black font-semibold text-lg ring-2 shadow-full_sm ring-offset-[5px] ring-white">
               {item.stack.react}
             </div>
@@ -41,7 +41,7 @@ export default function PortfolioCardRight({
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`xs:w-[300px] sm:w-[300px] h-[340px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow- flex
+          className={`xs:w-[300px] sm:w-[300px] h-[385px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow- flex
           overflow-hidden relative transition-all duration-1000 xl:order-last lg:order-1 lgx1:order-1 order-1 xs:flex-col sm:flex-col ${
             scrollOnHover ? "" : ""
           }`}
