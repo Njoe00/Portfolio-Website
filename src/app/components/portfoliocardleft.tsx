@@ -18,7 +18,7 @@ export default function PortfolioCardLeft({
   };
   return (
     <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex p-4">
-      <div className="flex xl:w-[950px] lg:w-[950px] md:w-[570px] sm:w-auto xs:w-auto lg:h-[400px] sm:h-[750px] xs:h-[750px] justify-center xl:flex-row lg:flex-row flex-col items-center text-center relative">
+      <div className="flex xl:w-[950px] lgx1:w-[570px] lg:w-[570px] md:w-[570px] sm:w-auto xs:w-auto lg:h-[750px] lgx1:h-[750px] sm:h-[750px] xs:h-[750px] justify-center xl:flex-row lg1:flex-col lg:flex-col flex-col items-center text-center relative">
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}

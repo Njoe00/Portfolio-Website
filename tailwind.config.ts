@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         xl: "1200px",
+        lgx1: "1024px",
         lg: "900px",
         md: "768px",
         sm: "576px",
