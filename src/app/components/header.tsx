@@ -14,7 +14,7 @@ export default function Header({
 }) {
   const [toggleHeader, setToggleHeader] = useState(false);
   const [isXLlargeScreen, setisXLlargeScreen] = useState(
-    window.innerWidth > 900
+    typeof window !== "undefined" ? window.innerWidth > 900 : false
   );
 
   const scrollToSection = (ref: any) => {
@@ -29,11 +29,15 @@ export default function Header({
     const handleResize = () => {
       setisXLlargeScreen(window.innerWidth > 900);
       if (!isXLlargeScreen) {
-        setToggleHeader(false);
+        setToggleHeader(
+          typeof window !== "undefined" ? window.innerWidth > 900 : false
+        );
       }
     };
 
-    window.addEventListener("resize", handleResize);
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+    }
 
     return () => {
       window.removeEventListener("resize", handleResize);
