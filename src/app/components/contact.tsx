@@ -9,7 +9,7 @@ const contactArray = [
     link: "https://www.google.com/maps/place/Vancouver,+BC/@49.2576182,-123.2887105,11z/data=!3m1!4b1!4m6!3m5!1s0x548673f143a94fb3:0xbb9196ea9b81f38b!8m2!3d49.2827291!4d-123.1207375!16zL20vMDgwaDI?entry=ttu",
   },
   {
-    title: "Mail",
+    title: "Email",
     image: "/mail.png",
     text: "nick.james.joe@gmail.com",
     link: "mailto:nick.james.joe@gmail.com",

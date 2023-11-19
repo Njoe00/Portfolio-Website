@@ -18,7 +18,7 @@ export default function PortfolioCardRight({
   };
   return (
     <div className="my-16 bg-white rounded-3xl shadow-full relative items-center justify-center flex p-4">
-      <div className="flex xl:w-[950px] lg:h-[400px] lg:w-[950px] lg:gap-20 md:gap-12 md:w-[570px] sm:w-auto xs:w-auto xs:h-[750px] justify-center xl:flex-row lg:flex-row flex-col items-center text-center relative">
+      <div className="flex xl:w-[950px] lg:w-[950px] md:w-[570px] sm:w-auto xs:w-auto lg:h-[400px] sm:h-[750px] xs:h-[750px] justify-center xl:flex-row lg:flex-row flex-col items-center text-center relative">
         <div className="flex-col flex flex-end w-[300px] h-[360px] text-center justify-center items-center xl:mr-14 xl:ml-20 xl:order-1 lg:order-1 order-last">
           <div className="flex flex-row items-center space-x-1 text-center">
             <div className="text-black font-bold text-lg">{item.title}</div>
@@ -41,7 +41,7 @@ export default function PortfolioCardRight({
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`xs:w-[301px] h-[340px] lg:w-[530px] rounded-2xl shadow-full
+          className={`xs:w-[300px] sm:w-[300px] h-[340px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow- flex
           overflow-hidden relative transition-all duration-1000 xl:order-last lg:order-last order-1 xs:flex-col sm:flex-col ${
             scrollOnHover ? "" : ""
           }`}
@@ -51,10 +51,10 @@ export default function PortfolioCardRight({
               scrollOnHover ? "-translate-y-3/4" : ""
             }`}
             src={item.image}
-            height="340"
-            width="530"
+            height={380}
+            width={530}
             alt=""
-            style={{ width: "auto", height: "auto" }}
+            style={{ width: "100%", height: "auto" }}
           />
         </div>
       </div>
