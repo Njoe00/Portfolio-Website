@@ -15,11 +15,12 @@ function About({ aboutRef }: aboutRefProps) {
           A dedicated Front-end Developer based in Vancouver, BC📍
         </div>
         <div className="text-xl text-[#767676] text-center xl:mt-0 mt-6">
-          I am Vancouverite born and raised. My off-beat last name comes from my
-          grandfather immgranting to Newzealnd where my parents both come from.
-          I have strong desire to be a team player and strive leave positive
-          impact where ever I go. Outside of programming I spend my leisure time
-          exercising, trying new food and studying invesments.
+          I am a Vancouverite, born and raised. My off-beat last name comes from
+          my grandfather, who immigrated to New Zealand, where both of my
+          parents hail from. I have a strong desire to be a team player and
+          strive to leave a positive impact wherever I go. Outside of
+          programming, I spend my leisure time exercising, trying new food, and
+          studying investments
         </div>
       </div>
     </div>

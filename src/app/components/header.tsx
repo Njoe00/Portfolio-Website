@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -55,7 +56,7 @@ export default function Header({
     <div className="absolute">
       <div className="z-10 bg-white h-[90px] flex items-center flex-row xl:px-10 lg:px-10 justify-between fixed w-screen shadow-md">
         <button
-          onClick={scrollToHomeRef}
+          onClick={() => scrollToSection(scrollToHomeRef)}
           className="text-2xl text-black font-extrabold xs:ml-4 sm:ml-4 md:ml-4"
         >
           NickJoe.dev
@@ -77,7 +78,7 @@ export default function Header({
         ) : (
           <>
             <div className="mr-4">
-              <button onClick={handleToggleHeader} className="">
+              <button onClick={handleToggleHeader}>
                 <Image src="/menu.png" width="30" height="30" alt="" />
               </button>
             </div>

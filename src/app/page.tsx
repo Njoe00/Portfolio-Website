@@ -1,6 +1,9 @@
 "use client";
 import React, { useRef } from "react";
-import Header from "./components/header";
+import dynamic from "next/dynamic";
+const DynamicHeader = dynamic(() => import("./components/header"), {
+  ssr: false,
+});
 import MainCard from "./components/maincard";
 import Portfolio from "./components/portfoliocards";
 import About from "./components/about";
@@ -14,7 +17,7 @@ export default function Home() {
 
   return (
     <main className="bg-[#f9f9f9] text-white h-screen w-full box-border">
-      <Header
+      <DynamicHeader
         scrollToHomeRef={homeRef}
         scrollToAboutRef={aboutRef}
         scrollToProjectsRef={projectsRef}
