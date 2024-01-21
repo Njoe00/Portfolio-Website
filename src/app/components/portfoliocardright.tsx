@@ -41,20 +41,20 @@ export default function PortfolioCardRight({
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`xs:w-[300px] sm:w-[300px] h-[385px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow- flex
+          className={`xs:w-[300px] sm:w-[300px] h-[340px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow-lg flex
           overflow-hidden relative transition-all duration-1000 xl:order-last lg:order-1 lgx1:order-1 order-1 xs:flex-col sm:flex-col ${
             scrollOnHover ? "" : ""
           }`}
         >
           <Image
-            className={`absolute h-auto transition-all duration-[4000ms] ease-in-out ${
-              scrollOnHover ? "-translate-y-3/4" : ""
+            className={`absolute h-[385px] transition-all duration-[4000ms] ease-in-out ${
+              scrollOnHover ? "" : ""
             }`}
             src={item.image}
-            height={380}
+            height={385}
             width={530}
             alt=""
-            style={{ width: "100%", height: "auto" }}
+            style={{ width: "100%", height: "100%" }}
           />
         </div>
       </div>

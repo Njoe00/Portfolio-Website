@@ -22,7 +22,7 @@ export default function PortfolioCardLeft({
         <div
           onMouseEnter={handleHover}
           onMouseLeave={handleHover}
-          className={`xs:w-[300px] sm:w-[300px] h-[340px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow- flex
+          className={`xs:w-[300px] sm:w-[300px] h-[340px] md:w-[530px] xl:w-[530px] lg:w-[530px] rounded-2xl shadow-lg flex
           overflow-hidden relative transition-all duration-1000 lg:order-3 order-1 ${
             scrollOnHover ? "" : ""
           }`}
