@@ -15,9 +15,9 @@ const socialMediaButtonArray = [
 
 export default function Footer() {
   return (
-    <div className="flex flex-row xs:flex-col sm:flex-col xs:justify-center sm:justify-center items-center space-y-10 bg-[#2d2e32] justify-around xs:py-14 sm:py-10">
+    <div className="flex xl:flex-row flex-col  justify-center items-center space-y-10 bg-[#2d2e32] xl:justify-around xs:py-14 sm:py-10">
       <h1 className="text-xl text-white font-bold xs:text-center sm:text-center flex">
-        Copyright © 2023. All rights are reserved{" "}
+        Copyright © 2023. All Rights Reserved
       </h1>
       <div>
         <div className="flex-row flex gap-4">

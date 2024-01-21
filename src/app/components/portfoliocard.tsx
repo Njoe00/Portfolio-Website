@@ -24,17 +24,34 @@ const portfolioInfo = [
     stack: { react: "React", tailwind: "Tailwind" },
     style: false,
   },
+  {
+    title: "Scale Op",
+    date: "(January 2024)",
+    icon: "/scale_op_logo.png",
+    image: "/scale-op.com_.png",
+    description:
+      "A fully-functioning website custom bulit to the clients specifications with robust 'Contact Us' form with its backend being connected to HubSpot.",
+    stack: { react: "Wordpress", tailwind: "Bricks Builder" },
+    style: true,
+  },
 ];
 
 const links = [
   {
     git_link: "https://github.com/Njoe00/Bellroy-Site-Copy",
     website_link: "https://bellroy-site-copy.vercel.app/",
+    git: true,
   },
   {
     git_link: "https://github.com/Njoe00/Youtube-PlayList-To-Spotify-Converter",
     website_link:
       "https://youtube-play-list-to-spotify-converter-657xuiovk-njoe00.vercel.app/",
+    git: true,
+  },
+  {
+    git_link: "https://github.com/Njoe00/Youtube-PlayList-To-Spotify-Converter",
+    website_link: "https://scale-op.com/",
+    git: false,
   },
 ];
 
