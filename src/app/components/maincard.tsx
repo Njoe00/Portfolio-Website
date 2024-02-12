@@ -3,19 +3,6 @@ import Image from "next/image";
 import TechStack from "./techstacks";
 import SocialMediaButtonsMainCard from "./socialmediabuttonsmaincard";
 
-const socialMediaButtonArray = [
-  {
-    link: "https://www.linkedin.com/in/nicholas-joe/",
-    default: "/linkedin.png",
-    highlighted: "/linkedin_blue.png",
-  },
-  {
-    link: "https://github.com/Njoe00",
-    default: "/github.png",
-    highlighted: "/github_blue.png",
-  },
-];
-
 export default function MainCard({ homeRef }: { homeRef: any }) {
   const mainText = "Front-End React Developer";
   const words = mainText.split(" ");
@@ -31,15 +18,6 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
                 {cutWords}
                 <div className="flex flex-row xl:justify-start text-center justify-center">
                   {lastWord}
-                  {/* <Image
-                    className="ml-4"
-                    src="/waving_hand.png"
-                    height={70}
-                    width={70}
-                    quality={100}
-                    alt="other"
-                    style={{ height: "60px", width: "60px" }}
-                  /> */}
                 </div>
               </div>
             </div>
@@ -47,11 +25,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
               Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
               Developer based in Vancouver, Canada. 📍
             </p>{" "}
-            <span className="flex-row flex mt-6 space-x-4 xl:items-start xl:justify-start justify-center">
-              {socialMediaButtonArray.map((item, index) => {
-                return <SocialMediaButtonsMainCard item={item} key={index} />;
-              })}
-            </span>
+            <SocialMediaButtonsMainCard />
           </div>
           <Image
             className="rounded-full xl:ml-12 order-1 xl:order-2"
