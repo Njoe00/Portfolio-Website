@@ -16,7 +16,7 @@ export default function Home() {
   const contactRef = useRef();
 
   return (
-    <main className="bg-[#f9f9f9] text-white h-screen w-full box-border">
+    <main className="bg-[#f9f9f9] text-white h-screen w-full box-border z-0">
       <DynamicHeader
         scrollToHomeRef={homeRef}
         scrollToAboutRef={aboutRef}
