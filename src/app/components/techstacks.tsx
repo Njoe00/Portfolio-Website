@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { Html } from "@react-three/drei";
 
-export default function TechkStatck() {
+export default function TechStacks() {
   const techImageLinks = [
     "/Javascript.svg",
     "/typescript.svg",

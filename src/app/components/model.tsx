@@ -12,9 +12,9 @@ export default function Model(props: any) {
         receiveShadow
         geometry={nodes.Object_2.geometry}
         material={materials.material_0}
-        position={[0, -2, 0]}
-        rotation={[3.129, -0.082, -0.011]}
-        scale={0.015}
+        position={[0.5, -0.5, 3]}
+        rotation={[3.129, -0.4, -0.011]}
+        scale={0.01}
       />
     </group>
   );

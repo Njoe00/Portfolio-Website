@@ -5,6 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import Model from "./model";
 import TechStack from "./techstacks";
 import Lights from "./lights";
+import MainCardText from "./maincardtext";
 import SocialMediaButtonsMainCard from "./socialmediabuttonsmaincard";
 import { AmbientLight } from "three";
 
@@ -15,7 +16,7 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
   const cutWords = words.slice(0, -1).join(" ");
   const ref = useRef();
   return (
-    <div ref={homeRef} className="bg-[#f9f9f9] w-full h-full flex relative z-0">
+    <div ref={homeRef} className="bg-[#f9f9f9] w-full h-full flex relative">
       {/* <div className="h-4/5 justify-center m-auto flex-col text-center xl:text-start xl:items-start">
         <div className="xl:flex-row flex-col flex items-center">
           <div className="h-auto flex-col xl:order-1 order-2">
@@ -31,19 +32,15 @@ export default function MainCard({ homeRef }: { homeRef: any }) {
               Hi, I&apos;m Nicholas Joe. A passionate Front-end React <br />{" "}
               Developer based in Vancouver, Canada. 📍
             </p>{" "} */}
-      <SocialMediaButtonsMainCard />
       {/* </div> */}
-      <Canvas
-        className="h-full"
-        shadows
-        camera={{ position: [-0.9, -1, 2], fov: 100 }}
-      >
-        <ambientLight intensity={1.5} />
-        <Suspense fallback={null}>
+      <Canvas>
+        <Suspense fallback="loading...">
+          <ambientLight intensity={1.5} />
           <Lights />
+          <MainCardText />
           <Model />
+          <OrbitControls makeDefault />
         </Suspense>
-        <OrbitControls />
       </Canvas>
       {/* <Image
             className="rounded-full xl:ml-12 order-1 xl:order-2"
