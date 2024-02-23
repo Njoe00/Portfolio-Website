@@ -7,7 +7,7 @@ export default function Lights() {
   // useHelper(lightref, DirectionalLightHelper, 0.5, "red");
   return (
     <>
-      <directionalLight intensity={4} ref={lightref} position={[-1, 0.5, 1]} />
+      <directionalLight intensity={4} ref={lightref} position={[2, 0.5, 1]} />
     </>
   );
 }
